@@ -8,7 +8,7 @@
                     <h2 class="property-title"><a href="#"><?= the_title() ?></a></h2>
                     <div class="property-meta">
                         <span class="meta-location">Ovcha Kupel, Sofia</span>
-                        <span class="meta-total-area">Price: 1,100 €/sq.m</span>
+                        <span class="meta-total-area">Price: ><?= get_field('property_price'); ?> €/sq.m</span>
                     </div>
 
                     <div class="property-details grid">
@@ -18,10 +18,10 @@
                             </div>
                             <div class="property-details-card-body">
                                 <ul>
-                                    <li>2 Bedrooms</li>
-                                    <li>1 Bathroom</li>
-                                    <li>1 Living room</li>
-                                    <li>Separated kitchen</li>
+                                    <li><?= get_field('bedrooms_number'); ?> Bedrooms</li>
+                                    <li><?= get_field('number_of_bathrooms'); ?> Bathroom</li>
+                                    <li><?= get_field('number_of_living_rooms'); ?> Living room</li>
+                                    <li>Separated kitchen: <?= (get_field('separated_kitchen') === true) ? 'Yes' : 'No'; ?></li>
                                 </ul>
                             </div>
                         </div>
@@ -32,11 +32,11 @@
                             <div class="property-details-card-body">
                                 <ul>
                                     <li>Floor: 6</li>
-                                    <li>Elevator/Lift</li>
-                                    <li>Brick-built</li>
-                                    <li>Electricity</li>
-                                    <li>Water Supply</li>
-                                    <li>Heating</li>
+                                    <li>Elevator/Lift: <?= (get_field('elevator') === true) ? 'Yes' : 'No'; ?></li>
+                                    <li>Brick-built: <?= (get_field('brick-built') === true) ? 'Yes' : 'No'; ?></li>
+                                    <li>Electricity: <?= (get_field('electricity') === true) ? 'Yes' : 'No'; ?></li>
+                                    <li>Water Supply: <?= (get_field('watter_supply') === true) ? 'Yes' : 'No'; ?></li>
+                                    <li>Heating: <?= (get_field('heating') === true) ? 'Yes' : 'No'; ?></li>
                                 </ul>
                             </div>
                         </div>
