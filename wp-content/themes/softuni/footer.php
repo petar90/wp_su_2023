@@ -9,7 +9,6 @@ wp_nav_menu('footer_menu');
 
 wp_footer();
 ?>
-
         <footer class="site-footer">
             <p>&copy; Copyright 2023 | Developer links: 
                 <a href="/edits.html">Edits</a>,

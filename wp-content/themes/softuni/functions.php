@@ -46,3 +46,10 @@ function wp_enqueue_style( $handle, $src = '', $deps = array(), $ver = false, $m
 wp_enqueue_style( 'styles.css', get_template_directory_uri() . '/assets/styles/styles.css' , $deps = array(), $ver = false, $media = 'all' );
 
 wp_enqueue_script( 'main.js', get_template_directory_uri() . '/assets/scripts/main.js', $deps = array(), $ver = false, $in_footer = true );
+
+
+
+function my_post_time_ago_function() {
+    return sprintf( esc_html__( '%s ago', 'textdomain' ), human_time_diff(get_the_time ( 'U' ), current_time( 'timestamp' ) ) );
+}
+add_filter( 'the_time', 'my_post_time_ago_function' );

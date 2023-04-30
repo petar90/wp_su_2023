@@ -8,7 +8,7 @@
     </div>
         <div class="property-details">
             <span class="property-price">€ 100,815</span>
-            <span class="property-date">Posted 14 days ago</span>
+            <span class="property-date">Posted <?= my_post_time_ago_function() ?></span>
         </div>
     </div> 
     <div class="property-image">
