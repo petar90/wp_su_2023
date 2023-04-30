@@ -8,7 +8,7 @@
                     <h2 class="property-title"><a href="#"><?= the_title() ?></a></h2>
                     <div class="property-meta">
                         <span class="meta-location">Ovcha Kupel, Sofia</span>
-                        <span class="meta-total-area">Price: ><?= get_field('property_price'); ?> €/sq.m</span>
+                        <span class="meta-total-area">Price: <?= get_field('property_price'); ?> €/sq.m</span>
                     </div>
 
                     <div class="property-details grid">

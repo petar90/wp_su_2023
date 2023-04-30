@@ -22,7 +22,6 @@ $homes_query = new WP_Query( $homes_args );
 // var_dump($homes_query);
 ?>
 
-<!-- Правим си проверка за ако има постове, и докато има постове  -->
 <?php 
     if ( have_posts()) {
         while (have_posts()){
@@ -49,7 +48,6 @@ $homes_query = new WP_Query( $homes_args );
 	<?php posts_nav_link(); ?>
 <?php endif; ?>
 
-<!-- Слагаме този ресет, за да не бърникаме из другите лупове на WP -->
 <?php wp_reset_postdata(); ?>
 
 </ul>

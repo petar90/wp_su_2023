@@ -7,7 +7,7 @@
  * @return void
  */
 function softuni_update_homes_views_count( $home_id){
-    // за да ъпдейтнем пост метата ни трябва ID на поста-джоб/ ако няма айди, функцията няма да прави нищо
+
     if ( empty( $home_id)) {
         return;
     }
